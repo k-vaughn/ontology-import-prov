@@ -1,0 +1,18 @@
+// Diagram for Invalidation
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	Invalidation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Invalidation</TD></TR></TABLE>> URL="../Invalidation" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	ActivityInfluence [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ActivityInfluence</TD></TR></TABLE>> URL="../ActivityInfluence" margin=0]
+	Invalidation -> ActivityInfluence [arrowhead=onormal style=solid]
+	InstantaneousEvent [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">InstantaneousEvent</TD></TR></TABLE>> URL="../InstantaneousEvent" margin=0]
+	Invalidation -> InstantaneousEvent [arrowhead=onormal style=solid]
+}
