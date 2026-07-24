@@ -3,6 +3,11 @@ digraph {
 	graph [overlap=false rankdir=TB splines=true]
 	node [fontname=Arial fontsize=12 margin=0 shape=none]
 	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		Dictionary [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Dictionary</TD></TR></TABLE>> URL="../Dictionary" margin=0]
+		EmptyCollection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">EmptyCollection</TD></TR></TABLE>> URL="../EmptyCollection" margin=0]
+	}
 	EmptyDictionary [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">EmptyDictionary</TD></TR></TABLE>> URL="../EmptyDictionary" margin=0]
 	{
 		rank=max
@@ -11,8 +16,6 @@ digraph {
 		label="" style=invis
 		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
 	}
-	Dictionary [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Dictionary</TD></TR></TABLE>> URL="../Dictionary" margin=0]
 	EmptyDictionary -> Dictionary [arrowhead=onormal style=solid]
-	EmptyCollection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">EmptyCollection</TD></TR></TABLE>> URL="../EmptyCollection" margin=0]
 	EmptyDictionary -> EmptyCollection [arrowhead=onormal style=solid]
 }

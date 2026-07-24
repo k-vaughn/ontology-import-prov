@@ -3,6 +3,11 @@ digraph {
 	graph [overlap=false rankdir=TB splines=true]
 	node [fontname=Arial fontsize=12 margin=0 shape=none]
 	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		EntityInfluence [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">EntityInfluence</TD></TR></TABLE>> URL="../EntityInfluence" margin=0]
+		InstantaneousEvent [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">InstantaneousEvent</TD></TR></TABLE>> URL="../InstantaneousEvent" margin=0]
+	}
 	End [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">End</TD></TR></TABLE>> URL="../End" margin=0]
 	{
 		rank=max
@@ -11,8 +16,6 @@ digraph {
 		label="" style=invis
 		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
 	}
-	EntityInfluence [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">EntityInfluence</TD></TR></TABLE>> URL="../EntityInfluence" margin=0]
 	End -> EntityInfluence [arrowhead=onormal style=solid]
-	InstantaneousEvent [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">InstantaneousEvent</TD></TR></TABLE>> URL="../InstantaneousEvent" margin=0]
 	End -> InstantaneousEvent [arrowhead=onormal style=solid]
 }

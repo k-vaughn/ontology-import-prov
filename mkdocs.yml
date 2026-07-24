@@ -2,59 +2,131 @@ site_name: W3C Provenance Ontology
 site_description: The W3C provenance ontology converted into a website
 repo_url: https://github.com/ISO-TC204/ontology-import-prov
 nav:
-- Home: index.md
-- prov:
-  - prov: prov.md
-  - Accept: Accept.md
-  - Activity: Activity.md
-  - Activity Influence: ActivityInfluence.md
-  - Agent: Agent.md
-  - Agent Influence: AgentInfluence.md
-  - Association: Association.md
-  - Attribution: Attribution.md
-  - Bundle: Bundle.md
-  - Collection: Collection.md
-  - Communication: Communication.md
-  - Contribute: Contribute.md
-  - Contributor: Contributor.md
-  - Copyright: Copyright.md
-  - Create: Create.md
-  - Creator: Creator.md
-  - Delegation: Delegation.md
-  - Derivation: Derivation.md
-  - Dictionary: Dictionary.md
-  - Direct Query Service: DirectQueryService.md
-  - Empty Collection: EmptyCollection.md
-  - Empty Dictionary: EmptyDictionary.md
-  - End: End.md
-  - Entity: Entity.md
-  - Entity Influence: EntityInfluence.md
-  - Generation: Generation.md
-  - Influence: Influence.md
-  - Insertion: Insertion.md
-  - Instantaneous Event: InstantaneousEvent.md
-  - Invalidation: Invalidation.md
-  - Key Entity Pair: KeyEntityPair.md
-  - Location: Location.md
-  - Modify: Modify.md
-  - Organization: Organization.md
-  - Person: Person.md
-  - Plan: Plan.md
-  - Primary Source: PrimarySource.md
-  - Publish: Publish.md
-  - Publisher: Publisher.md
-  - Quotation: Quotation.md
-  - Removal: Removal.md
-  - Replace: Replace.md
-  - Revision: Revision.md
-  - Rights Assignment: RightsAssignment.md
-  - Rights Holder: RightsHolder.md
-  - Role: Role.md
-  - Service Description: ServiceDescription.md
-  - Software Agent: SoftwareAgent.md
-  - Start: Start.md
-  - Submit: Submit.md
-  - Usage: Usage.md
+- TC204 on ISO.org: https://www.iso.org/committee/54706.html
+- TC 204 Home: https://isotc204.org/
+- RITSO Home: https://isotc204.org/ritso/
+- W3C Provenance Ontology:
+  - Home: index.md
+  - Classes:
+    - Accept: classes/Accept.md
+    - Activity: classes/Activity.md
+    - Activity Influence: classes/ActivityInfluence.md
+    - Agent: classes/Agent.md
+    - Agent Influence: classes/AgentInfluence.md
+    - Association: classes/Association.md
+    - Attribution: classes/Attribution.md
+    - Bundle: classes/Bundle.md
+    - Collection: classes/Collection.md
+    - Communication: classes/Communication.md
+    - Contribute: classes/Contribute.md
+    - Contributor: classes/Contributor.md
+    - Copyright: classes/Copyright.md
+    - Create: classes/Create.md
+    - Creator: classes/Creator.md
+    - Delegation: classes/Delegation.md
+    - Derivation: classes/Derivation.md
+    - Dictionary: classes/Dictionary.md
+    - Direct Query Service: classes/DirectQueryService.md
+    - Empty Collection: classes/EmptyCollection.md
+    - Empty Dictionary: classes/EmptyDictionary.md
+    - End: classes/End.md
+    - Entity: classes/Entity.md
+    - Entity Influence: classes/EntityInfluence.md
+    - Generation: classes/Generation.md
+    - Influence: classes/Influence.md
+    - Insertion: classes/Insertion.md
+    - Instantaneous Event: classes/InstantaneousEvent.md
+    - Invalidation: classes/Invalidation.md
+    - Key Entity Pair: classes/KeyEntityPair.md
+    - Location: classes/Location.md
+    - Modify: classes/Modify.md
+    - Organization: classes/Organization.md
+    - Person: classes/Person.md
+    - Plan: classes/Plan.md
+    - Primary Source: classes/PrimarySource.md
+    - Publish: classes/Publish.md
+    - Publisher: classes/Publisher.md
+    - Quotation: classes/Quotation.md
+    - Removal: classes/Removal.md
+    - Replace: classes/Replace.md
+    - Revision: classes/Revision.md
+    - Rights Assignment: classes/RightsAssignment.md
+    - Rights Holder: classes/RightsHolder.md
+    - Role: classes/Role.md
+    - Service Description: classes/ServiceDescription.md
+    - Software Agent: classes/SoftwareAgent.md
+    - Start: classes/Start.md
+    - Submit: classes/Submit.md
+    - Usage: classes/Usage.md
+  - Properties:
+    - actedOnBehalfOf: properties/actedOnBehalfOf.md
+    - activity: properties/activity.md
+    - agent: properties/agent.md
+    - alternateOf: properties/alternateOf.md
+    - asInBundle: properties/asInBundle.md
+    - atLocation: properties/atLocation.md
+    - atTime: properties/atTime.md
+    - derivedByInsertionFrom: properties/derivedByInsertionFrom.md
+    - derivedByRemovalFrom: properties/derivedByRemovalFrom.md
+    - describesService: properties/describesService.md
+    - dictionary: properties/dictionary.md
+    - endedAtTime: properties/endedAtTime.md
+    - entity: properties/entity.md
+    - generated: properties/generated.md
+    - generatedAtTime: properties/generatedAtTime.md
+    - hadActivity: properties/hadActivity.md
+    - hadDictionaryMember: properties/hadDictionaryMember.md
+    - hadGeneration: properties/hadGeneration.md
+    - hadMember: properties/hadMember.md
+    - hadPlan: properties/hadPlan.md
+    - hadPrimarySource: properties/hadPrimarySource.md
+    - hadRole: properties/hadRole.md
+    - hadUsage: properties/hadUsage.md
+    - has_anchor: properties/has_anchor.md
+    - has_provenance: properties/has_provenance.md
+    - has_query_service: properties/has_query_service.md
+    - influenced: properties/influenced.md
+    - influencer: properties/influencer.md
+    - insertedKeyEntityPair: properties/insertedKeyEntityPair.md
+    - invalidated: properties/invalidated.md
+    - invalidatedAtTime: properties/invalidatedAtTime.md
+    - mentionOf: properties/mentionOf.md
+    - pairEntity: properties/pairEntity.md
+    - pairKey: properties/pairKey.md
+    - pingback: properties/pingback.md
+    - provenanceUriTemplate: properties/provenanceUriTemplate.md
+    - qualifiedAssociation: properties/qualifiedAssociation.md
+    - qualifiedAttribution: properties/qualifiedAttribution.md
+    - qualifiedCommunication: properties/qualifiedCommunication.md
+    - qualifiedDelegation: properties/qualifiedDelegation.md
+    - qualifiedDerivation: properties/qualifiedDerivation.md
+    - qualifiedEnd: properties/qualifiedEnd.md
+    - qualifiedGeneration: properties/qualifiedGeneration.md
+    - qualifiedInfluence: properties/qualifiedInfluence.md
+    - qualifiedInsertion: properties/qualifiedInsertion.md
+    - qualifiedInvalidation: properties/qualifiedInvalidation.md
+    - qualifiedPrimarySource: properties/qualifiedPrimarySource.md
+    - qualifiedQuotation: properties/qualifiedQuotation.md
+    - qualifiedRemoval: properties/qualifiedRemoval.md
+    - qualifiedRevision: properties/qualifiedRevision.md
+    - qualifiedStart: properties/qualifiedStart.md
+    - qualifiedUsage: properties/qualifiedUsage.md
+    - removedKey: properties/removedKey.md
+    - specializationOf: properties/specializationOf.md
+    - startedAtTime: properties/startedAtTime.md
+    - used: properties/used.md
+    - value: properties/value.md
+    - wasAssociatedWith: properties/wasAssociatedWith.md
+    - wasAttributedTo: properties/wasAttributedTo.md
+    - wasDerivedFrom: properties/wasDerivedFrom.md
+    - wasEndedBy: properties/wasEndedBy.md
+    - wasGeneratedBy: properties/wasGeneratedBy.md
+    - wasInfluencedBy: properties/wasInfluencedBy.md
+    - wasInformedBy: properties/wasInformedBy.md
+    - wasInvalidatedBy: properties/wasInvalidatedBy.md
+    - wasQuotedFrom: properties/wasQuotedFrom.md
+    - wasRevisionOf: properties/wasRevisionOf.md
+    - wasStartedBy: properties/wasStartedBy.md
 site_url: https://isotc204.org/ontology-import-prov
 copyright: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
   <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
@@ -70,6 +142,8 @@ theme:
   - content.tooltips
   - icons
   - navigation.path
+  - navigation.tabs
+  - navigation.tabs.sticky
   - navigation.top
   icon:
     repo: fontawesome/brands/github
